@@ -19,6 +19,8 @@ def incoming_sms():
         resp.message("Ooh, a capital!")
     elif body == 'bye':
         resp.message("Goodbye")
+    else:
+        resp.message("Not a valid response. Please try again.")
 
     return str(resp)
 
