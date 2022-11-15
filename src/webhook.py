@@ -8,16 +8,15 @@ def incoming_sms():
     """Send a dynamic reply to an incoming text message"""
     # Get the message the user sent our Twilio number
     body = request.values.get('Body', None)
+    check = body.lower().strip()
 
     # Start our TwiML response
     resp = MessagingResponse()
 
     # Determine the right reply for this message
-    if body == 'hello':
+    if check == 'hello':
         resp.message("Hi!")
-    elif body == 'Hello':
-        resp.message("Ooh, a capital!")
-    elif body == 'bye':
+    elif check == 'bye':
         resp.message("Goodbye")
     else:
         resp.message("Not a valid response. Please try again.")
