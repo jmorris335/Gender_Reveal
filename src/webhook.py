@@ -1,6 +1,8 @@
 from flask import Flask, request, redirect
 from twilio.twiml.messaging_response import MessagingResponse
 
+from src.responses import RESPONSES
+
 app = Flask(__name__)
 
 @app.route("/sms", methods=['GET', 'POST'])
@@ -13,13 +15,13 @@ def incoming_sms():
     # Start our TwiML response
     resp = MessagingResponse()
 
-    # Determine the right reply for this message
-    if check == 'hello':
-        resp.message("Hi!")
-    elif check == 'bye':
-        resp.message("Goodbye")
+    # Check against dictionary
+    if RESPONSES.has_key(check):
+        resp.messasge(RESPONSES[check])
+    elif check == 'test':
+        resp.message('Test successful')
     else:
-        resp.message("Not a valid response. Please try again.")
+        resp.message("Invalid response, please try again or reply \'START\' to start over")
 
     return str(resp)
 
