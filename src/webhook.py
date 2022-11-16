@@ -2,9 +2,9 @@ from flask import Flask, request, redirect
 from twilio.twiml.messaging_response import MessagingResponse
 
 RESPONSES = {
-    "START": "Wherever you are, a stork flies over to you and hands you an invitation for a choose your own adventure gender reveal! \n\nReply back ACCEPT or DENY",
-    "ACCEPT": "Hurray! You will need to get to Clemson first. How do you want to travel?\n\nReply back TRAIN or PLANE",
-    "DENY": "We're sad you don't want to find out the gender! If you have changed your mind...\n\nReply back START",
+    "START": "Welcome to John and Kherissa's gender reveal! A stork flies over to you and hands you an invitation. You open it and read, \"Come find out our baby's gender (not Taylor) in this choose-your-own-adventure game!\" \n\nReply back CONTINUE or STOP",
+    "CONTINUE": "Hurray! You will need to get to Clemson first. How do you want to travel?\n\nReply back TRAIN or PLANE",
+    "STOP": "We're sad you don't want to find out the gender! If you change your mind...\n\nReply back START",
     "TRAIN": "You get on the train. What a ride! Too bad you picked the train going to the Big Rock Candy Mountain. It's an easy mistake to make, but you still aren't gonna get there on this locomotive...\n\nReply back GIVE UP, TIME MACHINE or RUN",
     "PLANE": "Your flight was delayed-are you taking Spirit? You are able to rebook on a different flight, wait or just take a train.\n\nReply back REBOOK, WAIT or TRAIN",
     "GIVE UP": "Giving up so soon? When you start to head back you see spot a time machine!\n\nReply back TIME MACHINE or FIND OUT GENDER",
@@ -32,7 +32,7 @@ RESPONSES = {
     "KNOCK": "Hello, hello! Welcome to our Gender Reveal! We'd love to hear your guess for our baby's gender!\n\nReply back BOY or GIRL",
     "BREAK IN": "The neighbor calls the police and you are sadly taken to jail.\n\nReply back JAIL or TIME MACHINE",
     "QUIT": "Everyone knows that quiters quit. How do you get to John and Kherissa's?\n\nReply back UBER or WALK",
-    "BOY": "Wow! You guessed it! We are having another boy around March 31st and we couldn't be more excited! Thanks for playing!\n\nReply back START",
+    "BOY": "Wow! You guessed it! We are having another boy around March 31st and we couldn't be more excited! Thanks for playing! (If you enjoyed this gender reveal, why not Venmo Kherissa 1$?)\n\nReply back START",
     "GIRL": "Well, you had a 50/50 shot. Try again!\n\nReply back BOY or GIRL",
     "JAIL": "You stay the night and meet a friendly inmate who is starting up a work group!\n\nReply back BREAK OUT, JOIN GROUP or TIME MACHINE",
     "BREAK OUT": "You got out! Choose where you want to run to.\n\nReply back TRAIN or PLANE",
