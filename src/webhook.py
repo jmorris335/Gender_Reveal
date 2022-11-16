@@ -7,7 +7,7 @@ RESPONSES = {
     "STOP": "We're sad you don't want to find out the gender! If you change your mind...\n\nReply back START",
     "TRAIN": "You get on the train. What a ride! Too bad you picked the train going to the Big Rock Candy Mountain. It's an easy mistake to make, but you still aren't gonna get there on this locomotive...\n\nReply back GIVE UP, TIME MACHINE or RUN",
     "PLANE": "Your flight was delayed-are you taking Spirit? You are able to rebook on a different flight, wait or just take a train.\n\nReply back REBOOK, WAIT or TRAIN",
-    "GIVE UP": "Giving up so soon? When you start to head back you see spot a time machine!\n\nReply back TIME MACHINE or FIND OUT GENDER",
+    "GIVE UP": "Giving up so soon? What you need is a time machine!\n\nReply back TIME MACHINE or FIND OUT GENDER",
     "TIME MACHINE": "You reach into your backpack and dig around. Underneath the Oreo's is a strange device with \"Do not use!\" written on it in sharpie. You use it and go back in time to your earliest memory: picking how to get to Clemson for this very important gender reveal!\n\nReply back TRAIN or PLANE",
     "WALK": "On your walk, you find you're headed to Arizona! And right when you try to reroute your friendly neighborhood cop picks you up for being suspicious looking and takes you for a cosy night in the community jail. No agency here.\n\nReply back JAIL",
     "RUN": "Woo, good thing you had a consistent exercise routine before this. Eventually even your endurance gives out though. Hitchhiking looks more and more ideal. You stick out your thumb and two cars pull up beside you, a pink one and a blue one. Which one do you take? Will you just keep walking?\n\nReply back PINK, BLUE or WALK",
