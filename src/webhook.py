@@ -3,7 +3,7 @@ from twilio.twiml.messaging_response import MessagingResponse
 
 RESPONSES = {
     "START": "Wherever you are, a stork flies over to you and hands you an invitation for a choose your own adventure gender reveal! \n\nReply back ACCEPT or DENY",
-    "YES": "Hurray! You will need to get to Clemson first. How do you want to travel?\n\nReply back TRAIN or PLANE",
+    "ACCEPT": "Hurray! You will need to get to Clemson first. How do you want to travel?\n\nReply back TRAIN or PLANE",
     "DENY": "We're sad you don't want to find out the gender! If you have changed your mind...\n\nReply back START",
     "TRAIN": "You get on the train. What a ride! Too bad you picked the train going to the Big Rock Candy Mountain. It's an easy mistake to make, but you still aren't gonna get there on this locomotive...\n\nReply back GIVE UP, TIME MACHINE or RUN",
     "PLANE": "Your flight was delayed-are you taking Spirit? You are able to rebook on a different flight, wait or just take a train.\n\nReply back REBOOK, WAIT or TRAIN",
