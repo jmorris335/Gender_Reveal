@@ -32,7 +32,7 @@ RESPONSES = {
     "KNOCK": "Hello, hello! Welcome to our Gender Reveal! We'd love to hear your guess for our baby's gender!\n\nReply back BOY or GIRL",
     "BREAK IN": "The neighbor calls the police and you are sadly taken to jail.\n\nReply back JAIL or TIME MACHINE",
     "QUIT": "Everyone knows that quiters quit. How do you get to John and Kherissa's?\n\nReply back UBER or WALK",
-    "BOY": "Wow! You guessed it! We are having another boy around March 31st and we couldn't be more excited! Thanks for playing! (If you enjoyed this gender reveal, why not Venmo Kherissa 1$?)\n\nReply back START",
+    "BOY": "Wow! You guessed it! We are having another boy around March 31st and we couldn't be more excited! Thanks for playing!\n\nReply back START",
     "GIRL": "Well, you had a 50/50 shot. Try again!\n\nReply back BOY or GIRL",
     "JAIL": "You stay the night and meet a friendly inmate who is starting up a work group!\n\nReply back BREAK OUT, JOIN GROUP or TIME MACHINE",
     "BREAK OUT": "You got out! Choose where you want to run to.\n\nReply back TRAIN or PLANE",
