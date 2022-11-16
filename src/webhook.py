@@ -20,7 +20,7 @@ def incoming_sms():
 
     # Check against dictionary
     if check in RESPONSES:
-        resp.messasge(RESPONSES[check])
+        resp.message(RESPONSES[check])
     elif check == 'test':
         resp.message('Test successful')
     else:
