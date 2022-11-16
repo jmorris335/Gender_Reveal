@@ -19,7 +19,7 @@ def incoming_sms():
     resp = MessagingResponse()
 
     # Check against dictionary
-    if RESPONSES.has_key(check):
+    if check in RESPONSES:
         resp.messasge(RESPONSES[check])
     elif check == 'test':
         resp.message('Test successful')
